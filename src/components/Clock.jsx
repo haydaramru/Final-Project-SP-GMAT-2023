@@ -1,27 +1,10 @@
-import { useState, useEffect } from 'react';
-
-function Clock() {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
-
-  const hours = time.getHours().toString().padStart(2, '0');
-  const minutes = time.getMinutes().toString().padStart(2, '0');
-  const seconds = time.getSeconds().toString().padStart(2, '0');
-
+// eslint-disable-next-line react/prop-types
+const Clock = ({ clockData }) => {
   return (
-    <div>
-      <p>{hours}:{minutes}:{seconds}</p>
+    <div className="text-lg text-center">
+      {clockData}
     </div>
-  );
+  )
 }
 
-export default Clock;
+export default Clock
