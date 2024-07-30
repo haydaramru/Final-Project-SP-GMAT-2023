@@ -1,4 +1,4 @@
-# Final Project Software Programmer GMAT 2023
+# Ground Control Station Using React
 
 This is a web-based application that visualizes and monitors data received from a WebSocket connection, presenting the information in the form of graphs and maps. The project uses React, Plotly, and Leaflet to achieve this.
 
